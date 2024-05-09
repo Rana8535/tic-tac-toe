@@ -8,7 +8,6 @@ let turno=true;
 
 const resetgame=()=>{
     turno=true;
-    win.innerText="";
     enabledbox();
 }
 
@@ -46,6 +45,7 @@ const disabledbox=()=>{
 const enabledbox=()=>{
     for(let box of boxes){
         box.disabled=false;
+        win.innerText="";
         box.innerText="";
     }
 }

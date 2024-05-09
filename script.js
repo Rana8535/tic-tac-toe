@@ -8,6 +8,7 @@ let turno=true;
 
 const resetgame=()=>{
     turno=true;
+    win.innerText="";
     enabledbox();
 }
 
